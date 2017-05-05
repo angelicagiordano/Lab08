@@ -14,5 +14,9 @@ public class TestDAO {
 		System.out.println("Lista di tutte le nazioni:");
 		List<Country> countries = dao.loadAllCountries();
 
+		System.out.println("Lista di tutte le nazioni:" );
+		List<Border> borders = dao.getCountryPairs(1980);
+
+		System.out.println("Numero confini:"+ borders.size() );
 	}
 }
